@@ -8,7 +8,7 @@ function startTime() {
     s = checkTime(s);
     document.body.style.backgroundColor="#"+h+""+m+""+s;
     document.getElementById('txt').innerHTML =h+":"+m+":"+s;
-    var t = setTimeout(function(){startTime()},500);
+    var t = setTimeout(function(){startTime()},900);
 }
 
 function checkTime(i) {
