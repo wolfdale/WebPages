@@ -115,15 +115,16 @@ hr {
 
 .carousel-inner > .item > .carousel-caption > p 
 {
-    padding-top: 19%;
+    padding-top: 15%;
     
-    height: 20%;
+    height: 10%;
     width:auto;
     top: auto ;
 }
 
 .carousel-inner > .item > .carousel-caption > hr
 {
+
     border-width: 5px;
 
 }
@@ -134,4 +135,32 @@ font-weight: bold;
 .text1{
      font-size: 40px;
     font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;   
+}
+
+@media (max-width: 700px) {
+    .carousel-inner > .item > .carousel-caption > p 
+{
+    padding-top:1%;
+    
+    height:1%;
+    
+}
+
+.carousel-inner > .item > .carousel-caption > hr
+{
+    border-width: 1px;
+    max-width: 20px;
+
+
+}
+.carousel-inner > .item > .carousel-caption > h1{
+font-weight: bold;
+font-size:14px;
+}
+
+.text1{
+     font-size: 12px;
+    font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;   
+} 
+
 }
