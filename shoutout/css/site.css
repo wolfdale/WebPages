@@ -1,0 +1,52 @@
+@font-face {
+    font-family:Serif;
+}
+
+html, body {
+  background-color: tomato;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  animation-name: colorchange;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+
+.wrapper {
+  text-align: center; 
+  display: table;
+  height: 100%; 
+  width: 100%;
+}
+
+#shoutout{
+  font-family: Serif, Basic Latin;
+  font-size: 90px;
+  font-weight: 100;
+  display: table-cell; 
+  vertical-align: middle;
+  color: black;
+  
+  animation-name: scaleIt;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-direction:alternate ;
+  animation-timing-function: ease-out;
+}
+
+@keyframes scaleIt {
+  from { transform: scale(1) }
+  to { transform: sclae(1.3) }
+}
+
+@keyframes colorchange {
+  0%   { background: #AE1125; }
+  25%  { background: #3782DE; }
+  50%  { background: #EC441E; }
+  75%  { background: #2E7FE1; }
+  100% { background: #F7CB44; }
+}
