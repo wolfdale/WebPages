@@ -1,0 +1,63 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  overflow: hidden;
+  background: #000;
+}
+
+.wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: 0px;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.fixed {
+  font-size: 30px;
+  text-align: center;
+  position: relative;
+  color: #EEEEEE;
+  animation: color .4s infinite;
+  animation-direction: alternate;
+}
+
+.opacity {
+  font-size: 30px;
+  text-align: center;
+  position: relative;
+  color: #EEEEEE;
+  position: absolute;
+  top: 0;
+  left: -2px;
+  animation: show .2s infinite;
+  animation-direction: alternate;
+}
+
+.opacity span {
+  color: #F802F8;
+}
+
+@keyframes show {
+  50% {
+    opacity: 0;
+    text-shadow: 12px 12px #AAE90E;
+  }
+}
+
+@keyframes color {
+  50% {
+    color: #b1b1b1;
+  }
+}
+
